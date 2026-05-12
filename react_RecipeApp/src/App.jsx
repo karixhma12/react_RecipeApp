@@ -1,9 +1,15 @@
-
+import Navbar from "./components/Navbar";
+import RecipeCard from "./components/RecipeCard";
+import RecipeDetail from "./components/RecipeDetail";
+import RecipeList from "./components/RecipeList";
 
 function App(){
   return(
     <div>
-      <h1> Recipe App </h1>
+      <Navbar/>
+      <RecipeCard/>
+      <RecipeDetail/>
+      <RecipeList/>
     </div>
   )
 }
