@@ -1,12 +1,11 @@
-
+import Card from "./Card";
 
 function RecipeCard({recipe}){
     return(
-        <>
+        <Card>
             <div> {recipe.title} </div>
-            <div> {recipe.category} </div>
-            <img src={recipe.image} alt={recipe.title}/> 
-        </>
+            <div> {recipe.category} </div> 
+        </Card>
     )
 }
 
