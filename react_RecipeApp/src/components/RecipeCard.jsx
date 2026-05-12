@@ -1,8 +1,12 @@
 
 
-function RecipeCard(){
+function RecipeCard({recipe}){
     return(
-        <div> Reipe Card </div>
+        <>
+            <div> {recipe.title} </div>
+            <div> {recipe.category} </div>
+            <img src={recipe.image} alt={recipe.title}/> 
+        </>
     )
 }
 

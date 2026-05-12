@@ -5,13 +5,11 @@ import RecipeList from "./components/RecipeList";
 import recipes from "./data";
 
 function App(){
-  console.log(recipes);
   return(
     <div>
       <Navbar/>
-      <RecipeCard/>
+      <RecipeList recipes={recipes}/>
       <RecipeDetail/>
-      <RecipeList/>
     </div>
   )
 }

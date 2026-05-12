@@ -1,10 +1,17 @@
+import RecipeCard from "./RecipeCard";
 
 
-
-function RecipeList(){
+function RecipeList({recipes}){
     return(
-        <div> Recipe List </div>
+    <div>
+        {recipes.map(recipe=>{
+            return(
+                <RecipeCard key={recipe.id} recipe={recipe}/>
+            )
+        })}
+    </div>
     )
+    
 }
 
 export default RecipeList;
