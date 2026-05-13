@@ -1,12 +1,12 @@
 import RecipeCard from "./RecipeCard";
 
 
-function RecipeList({recipes}){
+function RecipeList({recipes,setSelectedRecipe}){
     return(
     <div>
         {recipes.map(recipe=>{
             return(
-                <RecipeCard key={recipe.id} recipe={recipe}/>
+                <RecipeCard key={recipe.id} recipe={recipe} setSelectedRecipe={setSelectedRecipe}/>
             )
         })}
     </div>

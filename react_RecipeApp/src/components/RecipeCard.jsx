@@ -1,10 +1,10 @@
 import Card from "./Card";
 
-function RecipeCard({recipe}){
+function RecipeCard({recipe,setSelectedRecipe}){
     return(
-        <Card>
-            <div> {recipe.title} </div>
-            <div> {recipe.category} </div> 
+        <Card onClick={setSelectedRecipe(recipe)}>
+            <div>{recipe.title}</div> 
+            <div>{recipe.category}</div>
         </Card>
     )
 }
